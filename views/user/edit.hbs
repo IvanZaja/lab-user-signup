@@ -1,0 +1,22 @@
+<h1>Edit a user</h1>
+
+<form action="/user/{{user.id}}/edit"  method="POST" enctype="application/x-www-form-urlencoded">
+
+    <div class="input-group mb-1">
+        <label class="input-group-text">name</label>
+        <input type="text" value="{{user.name}}" class="form-group" name="name"/>
+    </div>
+
+    <div class="input-group mb-1">
+        <label class="input-group-text">Edad</label>
+        <input type="number" value="{{user.age}}" class="form-group" name="age"/>
+    </div>
+
+    <div class="input-group mb-1">
+        <label class="input-group-text">Email</label>
+        <input type="email" class="form-group" value="{{user.email}}" name="email"/>
+    </div>
+    
+  
+    <button type="submit" class="btn btn-primary" class="my-3">Done</button>
+</form>

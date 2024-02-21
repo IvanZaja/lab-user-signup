@@ -1,0 +1,9 @@
+<h1>Email: {{user.email}}</h1>
+<h1>Name: {{user.name}}</h1>
+<h1>Age: {{user.age}}</h1>
+<a href="/user/{{user.id}}/edit">Edit</a>
+
+<form method="POST" action="/user/{{user.id}}/delete">
+    <button  type="submit">Delete</button>
+</form>
+
